@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561451840223",
+    "project_id": "thermal-kavach",
+    "storage_bucket": "thermal-kavach.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561451840223:android:eed0472fca22607dad2f6a",
+        "android_client_info": {
+          "package_name": "in.thermalkavach.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561451840223-d7gv8bracd8bg1v4unbpur31ld5n1r2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.thermalkavach.app",
+            "certificate_hash": "895663c65df007edd6168e5c77afb210cb7f68aa"
+          }
+        },
+        {
+          "client_id": "561451840223-c67spikabkvriibhhb8qbvdmri91vtd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG3GJlB5z9rnmfdWGks_bB4LjFyhTqjrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561451840223-c67spikabkvriibhhb8qbvdmri91vtd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

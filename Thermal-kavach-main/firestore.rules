@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwnProfile(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    function validProfile() {
+      return request.resource.data.keys().hasOnly([
+        'name', 'email', 'role', 'ward', 'phone', 'updatedAt'
+      ])
+      && request.resource.data.name is string
+      && request.resource.data.role in ['citizen', 'government'];
+    }
+
+    match /users/{userId} {
+      allow read: if isOwnProfile(userId);
+      allow create, update: if isOwnProfile(userId) && validProfile();
+      allow delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

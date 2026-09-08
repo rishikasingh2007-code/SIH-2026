@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Thermal Kavach</string>
+    <string name="title_activity_main">Thermal Kavach</string>
+    <string name="package_name">in.thermalkavach.app</string>
+    <string name="custom_url_scheme">in.thermalkavach.app</string>
+</resources>

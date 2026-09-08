@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+alembic==1.14.1
+SQLAlchemy==2.0.36
+geoalchemy2==0.16.0
+psycopg2-binary==2.9.10
+geopandas==1.0.1
+pyarrow==18.1.0
+py7zr==0.22.0
+earthengine-api==1.5.9
+APScheduler==3.11.0
+python-dotenv==1.2.1
+httpx==0.28.1
+redis==5.2.1
